@@ -1,0 +1,27 @@
+﻿.howhead {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.statement {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    background-color: #F2F5FF;
+}
+
+.statcontainer {
+    width: 50%;
+}
+
+.testimonial {
+    width: 60%;
+    margin: auto;
+    height: fit-content;
+    background-color: #fff;
+}
