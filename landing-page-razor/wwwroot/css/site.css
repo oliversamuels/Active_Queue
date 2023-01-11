@@ -92,8 +92,14 @@ ul > li {
     scroll-snap-align: start;
 }
 
-.newsletter {
+.join_home {
+    width: 100%;
+    height: 400px;
     background-color: #FFF;
+}
+
+.newsletter {
+    background-color: #F2F5FF;
     height: 80vh;
     scroll-snap-align: start;
     padding: 80px;

@@ -1,0 +1,25 @@
+﻿.demo {
+    background-color: #FFF;
+    height: 100vh;
+}
+
+.demoform {
+    width: 70%;
+    height: fit-content;
+    border: 2px solid;
+    margin-left : 50px;
+    padding: 50px 150px 50px 50px;
+    border-image: linear-gradient(to bottom, blue, lightblue) 1;
+}
+
+.demoform form {
+    font-size : 14px;
+    color : #000;
+}
+    .demoform form input, select, option {
+        height: 40px;
+        font-size: 14px;
+    }
+
+@media (max-width: 991px) {
+}

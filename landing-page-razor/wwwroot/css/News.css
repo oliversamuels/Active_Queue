@@ -1,63 +1,102 @@
 ﻿.newshead {
-    height: 400px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
-.newsletter1 {
-    width: 80%;
-    height: 600px;
-    border: 1px solid;
-    border-image: linear-gradient(#5ebce0, #b5c0c4) 5;
+.imgBx {
+    width: 824px;
+    height: 372px;
+    background: #E0E8FB;
+    border-radius: 8px;
+    position: relative;
 }
 
-.newsletter1top {
-    width: 100%;
-    height: 30%;
-    background-color: #F2F5FF;
-    padding: 50px;
+.imgBxY {
+    position: absolute;
+    width: fit-content;
+    bottom:-70px;
+    left: -60px;
 }
 
-.newsletter1top > h3 {
-    font-weight: 700;
-    font-size: 36px;
+.news {
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
-.newsletter1top > a{
-    color: #EACC2A;
-    text-decoration: underline;
-    font-size: 20px;
+.newslet {
+    height: 400px;
+    display: flex;
+    align-items: center;
 }
 
-.newslesster1body {
-    padding: 0 40px;
+.imgBxII {
+    width: 500px;
     height: 350px;
+    border: 1px dashed #000;
+    position: relative;
+}
+
+.newst {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #E0E8FB;
+    padding: 10px;
+    left: 45px;
+    top: 15px;
+}
+
+.newstinner {
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
-    margin: 0 20px;
 }
 
-.newslesster1body::-webkit-scrollbar{
-    width:0;
+.newstinner::-webkit-scrollbar {
+    width: 0;
 }
 
-.newscont {
-    height: 300px;
-    min-width: 270px;
+.imgcont {
+    height: 100%;
+    min-width: 250px;
 }
 
-.newscont > img {
-    object-fit:contain;
+.imgcont img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.head {
+    border: 1px solid #000;
+    width: 100%;
+    border-style: dashed;
+    border-left: none;
+    border-right: none;
+}
+
+.head li {
+    padding: 10px 55px;
+}
+
+.head a {
+    color: #000;
+    text-decoration: none;
+}
+
+.newsletter {
+    background-color: #FFF;
+    height: 80vh;
+    padding: 80px;
 }
 
 @media (max-width: 991px) {
-    .newsletter1{
-        height:fit-content;
-    }
-
-    .newsletter1top{
-        height:inherit;
-    }
+    
 }

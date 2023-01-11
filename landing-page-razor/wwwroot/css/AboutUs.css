@@ -1,6 +1,6 @@
-﻿.aboutUs1 {
+﻿.aboutUs {
     background-color: #FFF;
-    height: calc(50vh - 70px);
+    height: 100vh;
 }
 
 .imgBorder {
@@ -45,7 +45,6 @@
     height: 350px;
     overflow-x: auto;
     overflow-y: hidden;
-    margin: 0 20px;
 }
 
 .flexpp::-webkit-scrollbar{
@@ -61,14 +60,15 @@
 }
 
 .photoFrame {
-    width: 60%;
+    width: 98%;
     max-height: 250px;
     margin-bottom: 20px;
 }
 
 .photoFrame > img {
+    width : 100%;
+    height : 100%;
     object-fit:contain;
-    border-radius: 40px;
 }
 
 .join {
@@ -76,6 +76,41 @@
     height: 400px;
     background-color: #F2F4FE;
     border-radius: 40px;
+}
+
+.gallery {
+    height: 800px;
+    width: 100%;
+    background-color: #F2F4FE;
+}
+
+.design {
+    height: 500px;
+    width: 100%;
+    background-color: #FFF;
+}
+
+.team {
+    height: 500px;
+    width: 100%;
+    background-color: #F2F4FE;
+}
+
+.values {
+    height: fit-content;
+    width: 100%;
+    background-color: #FFF;
+    padding : 80px 40px;
+}
+
+.galCont {
+    height : 600px;
+    padding : 0;
+}
+
+.galCont img{
+    height : 100%;
+    object-fit: contain;
 }
 
 @media (max-width: 991px) {
