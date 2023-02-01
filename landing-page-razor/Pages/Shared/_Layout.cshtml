@@ -13,6 +13,7 @@
     <link href="~/css/News.css" rel="stylesheet">
     <link href="~/css/How.css" rel="stylesheet">
     <link href="~/css/Demo.css" rel="stylesheet">
+    <link href="~/css/products.css" rel="stylesheet">
 </head>
 <body>
     <header class="container-fluid  p-0">
@@ -27,11 +28,11 @@
                         <li class="nav-item dropdown bg-transparent">
                             <a class="nav-link dropdown-toggle fw-bold" role="button" data-bs-toggle="dropdown" aria-expanded="false" asp-area="" asp-page="">Product</a>
                             <ul class="dropdown-menu dropdown-menu-transparent bg-gradient">
-                                <li><a class="dropdown-item" asp-page="">Product 1</a></li>
-                                <li><a class="dropdown-item" asp-page="">Product 2</a></li>
+                                <li><a class="dropdown-item" asp-page="products">Product 1</a></li>
+                                <li><a class="dropdown-item" asp-page="products">Product 2</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" asp-page="">Product 3</a></li>
-                                <li><a class="dropdown-item" asp-page="">Product 4</a></li>
+                                <li><a class="dropdown-item" asp-page="products">Product 3</a></li>
+                                <li><a class="dropdown-item" asp-page="products">Product 4</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -43,6 +44,9 @@
                         <li class="nav-item">
                             <a class="nav-link fw-bold" asp-page="how">How It Works</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" asp-page="contact">Contact</a>
+                        </li>
                     </ul>
                     <ul class="navbar-nav">
                         <li><a class="nav-link navb btn btn-primary p-2" asp-page="demo">Request Demo</a></li>
@@ -52,97 +56,11 @@
         </nav>
     </header>
     <div class="container-fluid section">
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="footer">
-        <div class="container p-5">
-            <div class="row">
-                <div class="col-3">
-                    <div>
-                        <img src="~/assets/images/GHIS_logo.png" class="img-fluid" alt="" width="150px"/>
-                    </div>
-                    <div>
-                        <div class="d-flex justify-content-start align-items-center my-3">
-                            <div class="box">
-                                <i class="bi bi-telephone-fill fs-2 fw-bold text-primary"></i>
-                            </div>
-                            <p>
-                                0815 026 0388
-                            </p>
-                        </div>
-                        <div class="d-flex justify-content-start align-items-center my-3">
-                            <div class="box">
-                                <i class="bi bi-envelope-fill fs-2 fw-bold text-primary"></i>
-                            </div>
-                            <p>
-                                support@genesys-health
-                            </p>
-                        </div>
-                        <div class="d-flex justify-content-start align-items-center my-3">
-                            <div class="box">
-                                <i class="bi bi-geo-alt-fill fs-2 fw-bold text-primary"></i>
-                            </div>
-                            <p>
-                                 Plot 1187, Abimbola Awoniyi Close, Saka Tinubu St, Victoria Island 100101, Lagos
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <h3 class="mb-3">Sitemap</h3>
-                    <p class="mb-3">Genesys EMR</p>
-                    <p class="mb-3">Genesys HMIS</p>
-                    <p class="mb-3">Genesys ERP</p>
-                    <p class="mb-3">Why Genesys?</p>
-                    <p class="mb-3">How it works</p>
-                </div>
-                <div class="col-2">
-                    <h3 class="mb-3">Company</h3>
-                    <p class="mb-3">About Us</p>
-                    <p class="mb-3">Contact Us</p>
-                    <p class="mb-3">Products</p>
-                    <p class="mb-3">Newsletter</p>
-                </div>
-                <div class="col-2">
-                    <h3 class="mb-3">Legal</h3>
-                    <p class="mb-3">Terms</p>
-                    <p class="mb-3">Privacy</p>
-                    <p class="mb-3">Security</p>
-                </div>
-            </div>
-        </div>
-        <div class=" container d-flex justify-content-end align-items-center mb-5">
-            <div class="mx-4">
-                <img src="https://img.icons8.com/color/48/000000/facebook-new.png" width="25"/>
-            </div>
-            <div class="mx-4">
-                <img src="https://img.icons8.com/color/48/000000/instagram-new--v1.png" width="25"/>
-            </div>
-            <div class="mx-4">
-                <img src="https://img.icons8.com/color/48/000000/linkedin.png" width="25"/>
-            </div>
-            <div class="mx-4">
-                <img src="https://img.icons8.com/color/48/000000/twitter-circled--v1.png" width="25"/>
-            </div>
-            <div class="mx-4">
-                <img src="https://img.icons8.com/color/48/000000/youtube-play.png" width="25"/>
-            </div>
-        </div>
-        <div class="w-75 m-auto d-flex justify-content-between align-items-center border-top p-4">
-            <div>
-                <p>&copy; Genesys Health 2022. All Rights Reserved.</p>
-            </div>
-            <div class="d-flex justify-content-between align-items-center">
-                <p>Privacy policy</p>
-                <p>Terms of use</p>
-                <p>Cookie policy</p>
-                <p>EMR Intergration</p>
-            </div>
-        </div>
-    </footer>
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

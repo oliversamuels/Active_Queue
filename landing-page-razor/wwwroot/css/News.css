@@ -14,6 +14,15 @@
     background: #E0E8FB;
     border-radius: 8px;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBx .img {
+    height: 90%;
+    object-fit: contain;
+
 }
 
 .imgBxY {
@@ -28,15 +37,24 @@
     margin-bottom: 50px;
 }
 
+.news .div {
+    display : none;
+}
+
+.news .show {
+    display : block;
+}
+
 .newslet {
     height: 400px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .imgBxII {
-    width: 500px;
-    height: 350px;
+    width: 50rem;
+    height: 35rem;
     border: 1px dashed #000;
     position: relative;
 }
@@ -84,11 +102,11 @@
 
 .head li {
     padding: 10px 55px;
+    cursor : pointer;
 }
 
-.head a {
-    color: #000;
-    text-decoration: none;
+.head .active {
+    background-color : yellow;
 }
 
 .newsletter {
@@ -98,5 +116,26 @@
 }
 
 @media (max-width: 991px) {
-    
+    .head li {
+        padding: 5px 10px;
+        font-size: 1.2rem;
+    }
+
+    .newslet {
+        height: fit-content;
+        margin-bottom: 5rem;
+    }
+
+    .imgBxII {
+        width: 40rem;
+        height: 30rem;
+    }
+
+    .second {
+        order: 1;
+    }
+
+    .newsletter {
+        height: fit-content;
+    }
 }
