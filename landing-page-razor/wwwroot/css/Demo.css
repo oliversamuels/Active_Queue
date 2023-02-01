@@ -53,4 +53,12 @@
     }
 
 @media (max-width: 991px) {
+    .demo {
+        height: fit-content;
+    }
+
+    .demoform {
+        width: 80%;
+        padding: 50px;
+    }
 }

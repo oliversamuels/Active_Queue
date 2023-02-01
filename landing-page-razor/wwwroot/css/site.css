@@ -74,6 +74,11 @@ ul > li {
     scroll-snap-align: start;
 }
 
+.IntroRow {
+    display: flex;
+    margin: 2rem 5rem 0 5rem;
+}
+
 .info {
     background-color: #FFF;
     height: 120vh;
@@ -506,6 +511,7 @@ h2 {
     height : 320px;
     background-color : #fff;
     border : 1px solid transparent;
+    margin-bottom: 2rem;
 }
 
 .sbns {
@@ -540,6 +546,14 @@ h2 {
 }
 
 @media (max-width: 991px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .IntroRow {
+        flex-direction: column;
+    }
+
     .row {
         display: flex;
         justify-content: center;
@@ -550,23 +564,33 @@ h2 {
         order: 1;
         text-align: center;
         font-size: 16px;
-        max-width: 80%;
+        width: 100%;
     }
 
-        .alpha > h1 {
-            font-weight: 600;
-            font-size: 4rem;
-            line-height: 5.5rem;
-            padding-bottom: 10px;
-        }
+    .alpha > h1 {
+        font-weight: 600;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+        padding-bottom: 10px;
+    }
 
-        .alpha > p {
-            font-weight: 400;
-            font-size: 2rem;
-            line-height: 2.4rem;
-            padding-bottom: 10px;
-            text-align: left;
-        }
+    .alpha > p {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .info h2 {
+        font-size: 3.5rem;
+        line-height: 2.6rem;
+    }
+
+    .info p {
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+    }
 
     .Beta {
         justify-content: center;
@@ -621,7 +645,8 @@ h2 {
     }
 
     .carde {
-        height : 350px;
+        height : fit-content;
+        min-width: 28rem;
     }
 
     .newsletter, .contact {
@@ -634,5 +659,38 @@ h2 {
 
     .footer .container .row{
         display : none;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .hsss {
+        font-size: 3.5rem;
+        line-height: 3.8rem;
+    }
+
+    .testi {
+        width: 70%;
+        margin-bottom: 5rem;
+    }
+
+    .join_home {
+        height: fit-content;
+        text-align: center;
+    }
+
+    .join_home h3 {
+        font-size:2rem;
+        font-weight:700;
+    }
+
+    .join_home p {
+        font-size:1.6rem;
+    }
+
+    .newsletter-home {
+        height: fit-content;
+        padding: 40px;
     }
 }
