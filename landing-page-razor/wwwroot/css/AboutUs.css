@@ -1,4 +1,6 @@
-﻿.aboutUs {
+﻿@import url('https://fonts.googleapis.com/css2?family=Commissioner&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.aboutUs {
     background-color: #FFF;
     height : fit-content;
 }
@@ -160,6 +162,94 @@
     transform : scale(1.05)
 }
 
+.vision {
+    width: 100%;
+    margin: 0;
+    margin-top: 10rem;
+    background-color: #F2F4FE;
+    padding: 4rem 2rem 6rem 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vision .circle {
+    position: absolute;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    background-color: #F2F4FE;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.vision .visionText {
+    text-align: center;
+    width: 40%;
+    color: #324054;
+    z-index: 2;
+}
+
+.vision .visionText h2{
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+    padding-bottom: 4rem;
+}
+
+.vision .visionText p{
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.mission {
+    width: 100%;
+    margin: 0;
+    margin-top: 5rem;
+    background-color: #FFF;
+    padding: 4rem 2rem 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mission .missionText {
+    text-align: center;
+    width: 40%;
+    color: #324054;
+    z-index: 2;
+}
+
+.mission .missionText h2{
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 200;
+    font-size: 3rem;
+    padding-bottom: 4rem;
+}
+
+.mission .missionText p{
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.leftVecCon, .rightVecCon {
+    position: absolute;
+}
+
+.leftVecCon {
+    left: 0;
+}
+
+.rightVecCon {
+    right: 0;
+}
+
+.leftVecCon img, .rightVecCon img{
+    width: 40rem;
+}
+
 @media (max-width: 991px) {
     .hide {
         display : none;
@@ -238,5 +328,21 @@
 
     .values img {
         width: 38rem;
+    }
+
+    .vision .visionText {
+        width: 90%;
+    }
+
+    .mission .missionText {
+        width: 90%;
+    }
+
+    .leftVecCon, .rightVecCon {
+        top : 7rem;
+    }
+
+    .leftVecCon img, .rightVecCon img{
+        width: 15rem;
     }
 }

@@ -115,6 +115,10 @@
     padding: 80px;
 }
 
+.title-date {
+    color: #9772FF;
+}
+
 @media (max-width: 991px) {
     .head li {
         padding: 5px 10px;

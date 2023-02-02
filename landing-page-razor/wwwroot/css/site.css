@@ -87,14 +87,16 @@ ul > li {
 
 .packages {
     background-color: #FFF;
-    height: 150vh;
+    height: fit-content;
+    padding: 4rem 0;
     scroll-snap-align: start;
 }
 
 .trophy, .testimony {
     background-color: #F2F5FF;
-    height: 80vh;
+    height: fit-content;
     scroll-snap-align: start;
+    padding: 4rem 0;
 }
 
 .join_home {
@@ -505,6 +507,7 @@ h2 {
 
 .testi-cap {
     gap: 6%;
+    height: fit-content;
 }
 
 .testi {
@@ -512,6 +515,7 @@ h2 {
     background-color : #fff;
     border : 1px solid transparent;
     margin-bottom: 2rem;
+    width: 35rem;
 }
 
 .sbns {
@@ -538,19 +542,52 @@ h2 {
     background: linear-gradient(135.01deg, rgba(255, 255, 255, 0.15) 25%, rgba(0, 63, 224, 0.0525) 92.63%);
     backdrop-filter: blur(75px);
 }
+.questionTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-@media (max-width: 1240px) {
-    .getst {
-        width: 70%;
-    }
+.questionTitle .question-btn{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: blue;
+}
+
+.questionText {
+    display: none;
+}
+
+.showText .questionText {
+    display: block;
+}
+
+.questionText hr{
+    border: 1px dashed;
+}
+
+.icon-down {
+    display: none;
+}
+
+.showText .icon-down {
+    display: inline;
+}
+
+.showText .icon-right {
+    display: none;
 }
 
 @media (max-width: 991px) {
     body {
         overflow-x: hidden;
+        width: 100vw;
     }
 
     .IntroRow {
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
 
@@ -657,7 +694,7 @@ h2 {
         padding: 30px;
     }
 
-    .footer .container .row{
+    .footer{
         display : none;
     }
 
@@ -671,7 +708,6 @@ h2 {
     }
 
     .testi {
-        width: 70%;
         margin-bottom: 5rem;
     }
 
@@ -692,5 +728,11 @@ h2 {
     .newsletter-home {
         height: fit-content;
         padding: 40px;
+    }
+}
+
+@media (max-width: 1240px) {
+    .getst {
+        width: 70%;
     }
 }
